@@ -33,10 +33,14 @@
       - routes / `mainRoutes.js`
       - styles / `globalStyles.js`
       - themes / `index.js`, `dark.js`, `light.js`
+      - .env
 
 - настройки проекта с использованием библиотеки контроля состояния компонентов пользовательского интерфейса
-  - конфигурирование `Store`
-  - 
+  - конфигурирование `Store`при помощи библиотеки `@reduxjs/toolkit`
+  - подключение библиотеки redux-persist
+  - настройка дефолтного middleware
+  - создание корневого редьюсера-заглушки (файл `rootReducer.js`)
+  - подключение redux в проект при помощи библиотеки `react-redux` (файл `index.js`)
 
 ## Backend
 
