@@ -1,14 +1,9 @@
-import { configureStore, combineReducers } from "@reduxjs/toolkit";
-
-const rootReducer = combineReducers({
-  // tasks: persistReducer(tasksConfig, tasksReducer),
-  tasks: tasksReducer,
-  authorization: persistReducer(authConfig, authReducer),
-});
+import { configureStore } from "@reduxjs/toolkit";
+import rootReducer from "./rootReducer";
 
 const store = configureStore({
   reducer: rootReducer,
-  // devTools: process.env.NODE_ENV !== "production",
+  devTools: process.env.NODE_ENV !== "production",
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
@@ -17,5 +12,4 @@ const store = configureStore({
     }),
 });
 
-export const persistor = persistStore(store);
 export default store;
