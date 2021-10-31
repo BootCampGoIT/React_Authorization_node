@@ -2,20 +2,41 @@
 
 ## Frontend
 
-- инициализация проекта (npx create-react-app)
-- подготовка проекта (организация базовой файловой структуры проекта)
-- установка пакетов, которые будут использоваться в проекте:
-  - @reduxjs/toolkit
-  - react-redux
-  - react-router-dom
-  - redux-persist
-  - axios
-  - yup
-  - formik
-  - react-switch
-  - react-loader-spinner
-  - styled-components
-  - react-responsive
+- инициализация проекта (`npx create-react-app`)
+- подготовка проекта:
+
+  - составление плана поэтапной реализации задания
+  - создание предварительного макета
+  - уяснение структуры проекта
+  - выделение основных структурных элементов
+  - установка основных пакетов, которые будут использованы в проекте:
+    - `@reduxjs/toolkit`
+    - `react-redux`
+    - `react-router-dom`
+    - `redux-persist`
+    - `axios`
+    - `yup`
+    - `formik`
+    - `react-switch`
+    - `react-loader-spinner`
+    - `styled-components`
+    - `react-responsive`
+  - организация базовой файловой структуры проекта (commit: `"project file structure created"`)
+    - каталоги/файлы:
+      - Components / `App.js`
+        - auth / `Auth.js`
+        - header / `Header.js`
+        - main / `Main.js`
+      - pages / `HomePage.js`, `AuthPage.js`
+      - redux / `store.js`, `rootReducer.js`
+        - auth / `authActions.js`, `AuthOperations.js`, `authReducers.js`, `AuthSelectors.js`
+      - routes / `mainRoutes.js`
+      - styles / `globalStyles.js`
+      - themes / `index.js`, `dark.js`, `light.js`
+
+- настройки проекта с использованием библиотеки контроля состояния компонентов пользовательского интерфейса
+  - конфигурирование `Store`
+  - 
 
 ## Backend
 
